@@ -97,7 +97,7 @@ using System;                                       // `using` goes at the top, 
                                                     // namespace.
 namespace MyNamespace {                             // Namespaces are PascalCase.
   public interface IMyInterface {                   // Interfaces start with 'I'
-    public int Calculate(float value, float exp);   // Methods are PascalCase
+    int Calculate(float value, float exp);          // Methods are PascalCase
   }
 
   public enum MyEnum {                              // Enumerations are PascalCase.
@@ -217,8 +217,8 @@ namespace MyNamespace {                             // Namespaces are PascalCase
 
 ### Property styles
 
-*   For single line read-only properties, prefer expression body properties
-    (`=>`) when possible.
+*   For single line read-only properties (mothods, lambdas), prefer expression body
+    properties (`=>`) when possible.
 *   For everything else, use the older `{ get; set; }` syntax.
 
 ### Expression body syntax
