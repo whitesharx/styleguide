@@ -9,6 +9,12 @@ additional modifications that suite studio requirements.
 * TypeScript Style Guide (TBD)
 * JavaScript Style Guide (TBD)
 
+# Workflow Guides References
+
+* Project versioning should comply to [Semantic Versioning](https://semver.org/)
+* Commit messages should comply to [Conventional Commits](https://www.conventionalcommits.org/)
+* Git branching model shloud comply to [GitFlow](https://github.com/nvie/gitflow)
+
 # License
 
 The style guides in this project are licensed under the CC-By 3.0 License, which encourages you to
