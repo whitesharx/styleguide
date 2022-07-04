@@ -51,8 +51,8 @@ Rule summary:
     *   Group class members in the following order:
         *   Nested classes, enums, delegates and events.
         *   Static, const and readonly fields.
-        *   Fields and properties.
         *   Constructors and finalizers.
+        *   Fields and properties.
         *   Methods.
     *   Within each group, elements should be in the following order:
         *   Public.
@@ -106,9 +106,12 @@ namespace MyNamespace {                             // Namespaces are PascalCase
   }
 
   public class MyClass {                            // Classes are PascalCase.
-    public int Foo = 0;                             // Public member variables are
-                                                    // PascalCase.
-    public bool NoCounting = false;                 // Field initializers are encouraged.
+    private const int Bar = 100;                    // `const` use PascalCase
+                                                    // as all public fileds and methods.
+                                                    // They go at the very top of the class.
+
+    public static int NumTimesCalled = 0;           // Public member variables are
+    public int Foo = 0;                             // PascalCase.
 
     private class Results {
       public int NumNegativeResults = 0;
@@ -117,17 +120,15 @@ namespace MyNamespace {                             // Namespaces are PascalCase
 
     private Results results;                        // Private member variables are
                                                     // camelCase.
-    public static int NumTimesCalled = 0;
-    private const int bar = 100;                    // const does not affect naming
-                                                    // convention.
-    private int[] someTable = {                     // Container initializers use a 2
-      2, 3, 4,                                      // space indent.
+
+    private int[] someTable = {                     // Container initializers use a 4
+        2, 3, 4,                                    // space indent.
     }
 
     public MyClass() {
       results = new Results {
-        NumNegativeResults = 1,                     // Object initializers use a 2 space
-        NumPositiveResults = 1,                     // indent.
+          NumNegativeResults = 1,                   // Object initializers use a 4 space
+          NumPositiveResults = 1,                   // indent.
       };
     }
 
@@ -349,8 +350,8 @@ For example:
 
 ```c#
 var x = new SomeClass {
-  Property1 = value1,
-  Property2 = value2,
+    Property1 = value1,
+    Property2 = value2,
 };
 ```
 
@@ -362,8 +363,7 @@ var x = new SomeClass {
 
 *   In general, namespaces should be no more than 2 levels deep.
 *   Don't force file/folder layout to match namespaces.
-*   For shared library/module code, use namespaces. For leaf 'application' code,
-    such as `unity_app`, namespaces are not necessary.
+*   For shared library/module code, use namespaces.
 *   New top-level namespace names must be globally unique and recognizable.
 
 ### Default values/null returns for structs
