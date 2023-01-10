@@ -8,7 +8,7 @@ additional modifications to suite studio requirements and codebase.
 > ⚠️ Warning! All C#/Unity projects starting from year **2023** must strictly follow only [Google C# Style Guide](https://google.github.io/styleguide/csharp-style.html) without relying on our **Legacy** modefied styleguides. All shared codebase or projects started before year **2023** still follow **Legacy** style guide.
 
 * [C# Style Guide](https://google.github.io/styleguide/csharp-style.html)
-* [C# Style Guide - **Legacy**](https://github.com/whitesharx/styleguide/blob/master/csharp/csharp-style.md)
+* [C# Style Guide - **Legacy**](https://github.com/whitesharx/styleguide/blob/develop/csharp-legacy/csharp-style.md)
 * [TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
