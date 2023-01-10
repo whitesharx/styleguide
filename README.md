@@ -2,12 +2,15 @@
 
 [![License](https://img.shields.io/static/v1?label=License&message=CC%20BY%203.0&style=for-the-badge&logo=creative-commons&color=EF9421)](https://creativecommons.org/licenses/by/3.0/)
 
-These styleguies based on well-formed [Google Style Guides](https://github.com/google/styleguide) with
-additional modifications that suite studio requirements.
+These styleguies based on well-formed [Google Style Guides](https://google.github.io/styleguide/) with
+additional modifications to suite studio requirements and codebase.
 
-* [C# Style Guide](https://github.com/whitesharx/styleguide/blob/master/csharp/csharp-style.md)
-* TypeScript Style Guide (TBD)
-* JavaScript Style Guide (TBD)
+> ⚠️ Warning! All C#/Unity projects starting from year **2023** must strictly follow only [Google C# Style Guide](https://google.github.io/styleguide/csharp-style.html) without relying on our **Legacy** modefied styleguides. All shared codebase or projects started before year **2023** still follow **Legacy** style guide.
+
+* [C# Style Guide](https://google.github.io/styleguide/csharp-style.html)
+* [C# Style Guide - **Legacy**](https://github.com/whitesharx/styleguide/blob/master/csharp/csharp-style.md)
+* [TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
+* [JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
 # Workflow Guides References
 
